@@ -888,7 +888,7 @@ class Common
             }
         }
 
-        array_walk_recursive($return, 'Common::trim');
+        array_walk_recursive($return, 'piwik\Common::trim');
         return $return;
     }
 
