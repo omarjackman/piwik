@@ -91,7 +91,7 @@ class WidgetsList
         if (($ob = array_search($b, $order)) === false) {
             $ob = array_search('_others_', $order);
         }
-        return $oa > $ob;
+        return ($oa > $ob) ? 1 : -1;
     }
 
     /**
