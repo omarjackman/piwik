@@ -888,8 +888,13 @@ class Common
             }
         }
 
-        array_walk_recursive($return, 'trim');
+        array_walk_recursive($return, 'Common::trim');
         return $return;
+    }
+
+    public static function trim($value, $dummy=null)
+    {
+        return trim($value);
     }
 
     /*
